@@ -9069,14 +9069,25 @@ $grid-breakpoints: (
 
 
 
-/* Mobile Override */
-@media screen and (max-width: 768px) {
-  /* Replace '.container' with the actual class name of your main wrapper */
-  html, body, .container, #root {
-    aspect-ratio: auto !important;   /* Disables the fixed ratio */
-    width: 100% !important;          /* Ensures full width */
-    height: 100% !important;         /* Allows height to grow with content */
-    min-height: 200dvh !important;   /* Forces it to be at least full screen height */
-    overflow-y: auto !important;     /* Enables vertical scrolling if content is too tall */
-  }
+/* 1. Force the browser window to be full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;           /* Essential: allows children to inherit height */
+    overflow-x: hidden;     /* Prevents horizontal scrollbar */
+    background-color: #020617; /* Matches your dark background color */
+}
+
+/* 2. Force your main container to fill that space */
+/* Replace '#root' with your specific ID if different (e.g., .App, #app) */
+#root, .container, body > div:first-child {
+    min-height: 100vh;      /* Fallback for older browsers */
+    min-height: 100dvh;     /* Dynamic Viewport Height (ignores address bar) */
+    width: 100%;
+    
+    display: flex;          /* Uses Flexbox to layout items */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center;/* Centers content vertically */
+    align-items: center;    /* Centers content horizontally */
 }
