@@ -9029,64 +9029,50 @@ $grid-breakpoints: (
 }
 
 
-
 /* ===========================================================
-   MASTER RESPONSIVENESS PATCH (Final Version)
-   Fixes: Windows Scaling & Smartboard Aspect Ratio
-   Feature: perfect layout scale + VISIBLE Menu
+   RESPONSIVENESS PATCH (FIXED MENU VERSION)
+   Based on your request: Shrinks layout like 67% zoom, 
+   BUT keeps the menu visible and readable.
    =========================================================== */
 
-/* Target Windows Laptops (125% - 150% scale) and Smartboards */
-@media only screen and (min-width: 1025px) and (max-width: 1550px) {
-
-    /* 1. THE "ASPECT RATIO" FIX
-       This shrinks the general layout (images, spacing, huge text) 
-       to mimic the 67% zoom you liked. */
+@media only screen and (min-width: 1025px) and (max-width: 1480px) {
+    
+    /* 1. SIMULATE 67% ZOOM (The part you liked)
+       This shrinks all images, sections, and body text. */
     html {
         font-size: 85% !important; 
     }
 
-    /* 2. CONTAINER BREATHING ROOM
-       Prevents the "ugly" cramped look by using more screen width. */
+    /* 2. CONTAINER WIDTH 
+       Gives breathing room on the sides. */
     .container {
-        max-width: 95% !important;
-        width: 95% !important;
-        padding-left: 20px;
-        padding-right: 20px;
+        max-width: 94% !important; 
+        width: 94% !important;
     }
 
-    /* 3. THE MENU RESTORATION (Critical Fix)
-       We explicitly force the menu text back to PIXELS (px).
-       This overrides the 85% scaling so the menu stays big and readable. */
+    /* 3. THE MENU BAR FIX (The Correction)
+       In the first code, I used '0.9rem' which made the menu tiny.
+       Here, we force '15px'. Pixels do NOT shrink with the html scaling,
+       so the menu stays big and visible while the site shrinks. */
     .menuzord-menu > li > a {
-        font-size: 15px !important;     /* Fixed size, readable on all screens */
-        font-weight: 700 !important;    /* Bold to make it pop */
-        padding: 28px 12px !important;  /* Adjust padding to vertically center it */
-        line-height: 1 !important;      /* Prevent weird vertical gaps */
-        white-space: nowrap !important; /* Forces menu items to stay on one line */
+        font-size: 15px !important;     /* Force readable size */
+        font-weight: 600 !important;    /* Ensure visibility */
+        white-space: nowrap !important; /* Prevent wrapping */
     }
-
-    /* Force the menu container to be visible */
-    .menuzord-menu {
-        display: block !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        height: auto !important;
-    }
-
-    /* 4. LOGO BALANCE
-       Slightly adjust logo so it doesn't push the menu off-screen */
+    
+    /* Ensure the logo scales proportionally with the menu */
     .menuzord-brand img {
         max-width: 160px !important;
         height: auto !important;
-        margin-top: 0px !important;
     }
+}
 
-    /* 5. HEADER HEIGHT STABILITY
-       Prevents the header from collapsing into a thin line */
-    .header-nav-wrapper {
-        min-height: 80px !important;
-        display: flex !important;
-        align-items: center !important;
+/* 4. SMARTBOARD 4K FIX (Keep this if your board uses high DPI) */
+@media only screen and (min-width: 1921px) and (max-width: 3840px) and (min-resolution: 2dppx) {
+    html {
+        font-size: 100% !important; 
+    }
+    .container {
+        max-width: 1600px !important; 
     }
 }
