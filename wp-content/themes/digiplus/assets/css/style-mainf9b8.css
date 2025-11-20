@@ -1,12 +1,5 @@
 /*------------------------------------------------------------------
 [Master Stylesheet]
-
-Project:        Digiplus
-Version:        1.0
-Last change:    08.06.2025
-Primary use:    WordPress Theme
-Author:         ThemeMascot
-URL:            https://themeforest.net/user/ThemeMascot
 -------------------------------------------------------------------*/
 /*
 This file contains the common styles of this theme.
@@ -553,22 +546,23 @@ ul {
   right: 0;
   width: 30px;
 }
-/* =========================================
-   1. SCROLL TO TOP BUTTON (Force Position)
-   ========================================= */
+/* -------- Scroll To Top ---------- */
 .scroll-to-top {
-  display: none; /* Toggled by JS */
+  display: none;
 }
 
 .scroll-to-top a {
-  /* Force position away from edges */
-  bottom: 30px !important;
-  right: 30px !important; 
-  
-  width: 40px !important;
-  height: 40px !important;
   background-size: 200% auto;
   box-shadow: 0 7px 30px rgba(0, 0, 0, 0.3);
+  
+  /* Tighter Positioning */
+  bottom: 15px; 
+  right: 15px;  
+  
+  /* Smaller Compact Size */
+  width: 40px;
+  height: 40px;
+  
   border-radius: 50%;
   padding: 2px;
   position: fixed;
@@ -584,13 +578,75 @@ ul {
 
 .scroll-to-top a i {
   color: var(--theme-color1-text-color);
-  font-size: 20px !important;
+  font-size: 20px; /* Reduced icon size */
 }
 
 .scroll-to-top a:hover {
   text-decoration: none;
   opacity: 1;
   transform: translateY(-3px);
+}
+
+/* 📱 MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .scroll-to-top a {
+    /* Ultra Compact for Mobile */
+    width: 35px;
+    height: 35px;
+    right: 10px;   /* Very close to edge */
+    bottom: 10px;
+  }
+
+  .scroll-to-top a i {
+    font-size: 16px;
+  }
+}/* =========================================
+   1. SCROLL TO TOP BUTTON (Updated Colors)
+   ========================================= */
+.scroll-to-top {
+  display: none; /* Toggled by JS */
+}
+
+.scroll-to-top a {
+  /* Force position away from edges */
+  bottom: 30px !important;
+  right: 30px !important; 
+  
+  /* 🎨 NEW: Yellow Gradient Background (Matches Contact Icons) */
+  background: linear-gradient(180deg, #13132f, #0d0630) !important;
+  
+  width: 40px !important;
+  height: 40px !important;
+  box-shadow: 0 7px 30px rgba(22, 20, 65, 0.3);
+  border-radius: 50%;
+  padding: 2px;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  z-index: 99999;
+  
+  /* Initial Opacity (Slightly visible) */
+  opacity: 0.8; 
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top a i {
+  /* 🎨 NEW: White and Bold Arrow */
+  color: #ffffff !important;
+  font-size: 20px !important;
+  font-weight: 900 !important; /* Extra Bold */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Slight text shadow for pop */
+}
+
+.scroll-to-top a:hover {
+  text-decoration: none;
+  opacity: 1;
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 10px 20px rgba(159, 58, 0, 0.25); /* Orange glow on hover */
 }
 
 /* 📱 MOBILE: SCROLL BUTTON */
@@ -1563,7 +1619,7 @@ body:not(.elementor-editor-active).tm-header-sticky-mobile header #elementor-hea
         background: #f6a611;
         color: #fff;
         padding: 12px 25px;
-        border-radius: 30px; /* Rounded pill */
+        border-radius: 30px; 
         font-weight: 600;
         font-size: 13px;
         text-decoration: none;
@@ -1587,6 +1643,7 @@ body:not(.elementor-editor-active).tm-header-sticky-mobile header #elementor-hea
 
     /* Social Icons */
     .sb-socials { display: flex; gap: 10px; }
+    
     .sb-soc-link {
         width: 36px; height: 36px;
         background: #f6a611;
@@ -1596,6 +1653,25 @@ body:not(.elementor-editor-active).tm-header-sticky-mobile header #elementor-hea
         text-decoration: none;
         font-size: 14px;
         font-weight: bold;
+        /* Added transition for smooth color swap */
+        transition: background-color 0.3s ease; 
+    }
+
+    /* NEW: Dark Navy Blue on Click/Active State */
+    .sb-soc-link:active, 
+    .sb-soc-link:focus {
+        background: #001f3f; /* Dark Navy Blue */
+        color: #fff;
+    }
+}
+
+
+/* ===========================================================
+   EMERGENCY FIX: HIDE MOBILE FOOTER ON DESKTOP
+   =========================================================== */
+@media (min-width: 1025px) {
+    .sb-mobile-sidebar-footer {
+        display: none !important;
     }
 }
 
@@ -3142,7 +3218,7 @@ textarea.form-control,
 }
 
 .tm-swiper-container,
-.tm-testimonial-single-carousel {
+.stimonial-single-carousel {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -8955,7 +9031,58 @@ $grid-breakpoints: (
 
 
 
+/* ===========================================================
+   RESPONSIVENESS PATCH (By Gemini for Shivam Gupta)
+   Fixes: Windows Laptop (150% Scale) & Smartboard (300% Scale)
+   =========================================================== */
 
+/* 1. SIMULATE 67% ZOOM ON LAPTOPS/SMARTBOARDS
+   Target screens between 1024px and 1440px (Common "Cramped" Range) */
+@media only screen and (min-width: 1025px) and (max-width: 1480px) {
+    
+    html {
+        /* Reduces all REM-based sizes to 85% of their original size.
+           This shrinks fonts, padding, and margins proportionally. */
+        font-size: 85% !important; 
+    }
+
+    /* 2. PREVENT HORIZONTAL SCROLLING & TIGHT EDGES */
+    .container {
+        /* Force container to leave breathing room on sides */
+        max-width: 92% !important; 
+        width: 92% !important;
+    }
+
+    /* 3. FIX HEADER/MENU OVERLAPPING
+       Prevents the menu from dropping to a second line or overlapping the logo */
+    .menuzord-menu > li > a {
+        padding: 10px 10px !important; /* Reduce space between menu items */
+        font-size: 0.9rem !important;  /* Slightly smaller menu text */
+    }
+    
+    .menuzord-brand img {
+        /* Scale down the logo slightly to save space */
+        max-width: 130px !important; 
+        width: auto !important;
+    }
+
+    /* Adjust header height if it's sticky */
+    .header-nav .header-nav-wrapper {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+}
+
+/* 4. SPECIFIC FIX FOR 4K SMARTBOARDS (High DPI) 
+   If the board reports a very high resolution but high pixel density */
+@media only screen and (min-width: 1921px) and (max-width: 3840px) and (min-resolution: 2dppx) {
+    html {
+        font-size: 100% !important; /* Reset to standard */
+    }
+    .container {
+        max-width: 1600px !important; /* Allow wider layout on true 4K */
+    }
+}
 
 
 
