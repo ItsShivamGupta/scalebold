@@ -9129,7 +9129,7 @@ $grid-breakpoints: (
 /* B. Floating Contact/Social Icons (Upper Position) */
 /* This pushes the contact icons UP by 80px so they sit ABOVE the scroll arrow */
 .floating-contact-wrapper {
-    bottom: 100px !important;      /* 30px (arrow) + 45px (height) + 25px (gap) */
+    bottom: 85px !important;      /* 30px (arrow) + 45px (height) + 25px (gap) */
     right: 30px !important;        /* Aligned vertically with arrow */
     z-index: 99998 !important;
 }
