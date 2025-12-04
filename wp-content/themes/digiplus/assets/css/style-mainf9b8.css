@@ -9170,7 +9170,7 @@ $grid-breakpoints: (
     /* 5. FIX FLOATING CONTACT ICONS
        Keeps them nicely positioned in the corner. */
     .floating-contact-wrapper {
-        bottom: 50px !important; 
+        bottom: 100px !important; 
         right: 30px !important;
     }
 }
