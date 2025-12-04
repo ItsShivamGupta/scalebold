@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://scalebold.in/</loc>
+    <priority>1.0</priority>
+  </url>
+  <!-- City Landing Pages -->
+  <url>
+    <loc>https://scalebold.com/locations/bangalore/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/hyderabad/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/pune/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/chennai/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/gurgaon/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/noida/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/mumbai/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/delhi/</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Bangalore -->
+  <url>
+    <loc>https://scalebold.com/locations/bangalore/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/bangalore/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/bangalore/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Hyderabad -->
+  <url>
+    <loc>https://scalebold.com/locations/hyderabad/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/hyderabad/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/hyderabad/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Pune -->
+  <url>
+    <loc>https://scalebold.com/locations/pune/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/pune/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/pune/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Chennai -->
+  <url>
+    <loc>https://scalebold.com/locations/chennai/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/chennai/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/chennai/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Gurgaon -->
+  <url>
+    <loc>https://scalebold.com/locations/gurgaon/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/gurgaon/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/gurgaon/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Noida -->
+  <url>
+    <loc>https://scalebold.com/locations/noida/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/noida/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/noida/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Mumbai -->
+  <url>
+    <loc>https://scalebold.com/locations/mumbai/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/mumbai/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/mumbai/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Service-Specific Pages for Delhi -->
+  <url>
+    <loc>https://scalebold.com/locations/delhi/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/delhi/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/delhi/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Location Pages for Dhaka -->
+  <url>
+    <loc>https://scalebold.com/locations/dhaka/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/dhaka/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/dhaka/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/dhaka/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Location Pages for East Champaran -->
+  <url>
+    <loc>https://scalebold.com/locations/east-champaran/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/east-champaran/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/east-champaran/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/east-champaran/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Location Pages for Bihar -->
+  <url>
+    <loc>https://scalebold.com/locations/bihar/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/bihar/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/bihar/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/bihar/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Location Pages for India -->
+  <url>
+    <loc>https://scalebold.com/locations/india/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/india/branding-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/india/web-development-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://scalebold.com/locations/india/marketing-agency/</loc>
+    <priority>0.9</priority>
+  </url>
+</urlset>
