@@ -9171,7 +9171,7 @@ $grid-breakpoints: (
        Keeps them nicely positioned in the corner. */
     .floating-contact-wrapper {
         bottom: 50px !important; 
-        right: 20px !important;
+        right: 30px !important;
     }
 }
 
